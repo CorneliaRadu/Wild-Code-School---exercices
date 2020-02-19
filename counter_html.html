@@ -1,0 +1,35 @@
+<button id="minus-button">
+    -
+</button>
+
+<button id="plus-button">
+    +
+</button>
+
+<span id="counter">
+    0
+</span>
+
+<script>
+    const minusButton = document.getElementById('minus-button')
+    const plusButton = document.getElementById('plus-button')
+    const counter = document.getElementById('counter')
+
+    let count = 0
+
+    function handleMinusButtonClick() {
+        count = count - 1
+
+        counter.innerHTML = count
+    }
+
+    function handlePlusButtonClick() {
+        count = count + 1
+
+        counter.innerHTML = count
+    }
+
+    minusButton.addEventListener('click', handleMinusButtonClick)
+
+    plusButton.addEventListener('click', handlePlusButtonClick)
+</script>
